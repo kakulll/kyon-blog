@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 📖 进入博客
-      link: /blog/
+      link: /posts/
     - theme: alt
       text: 🙋 关于
       link: /about
