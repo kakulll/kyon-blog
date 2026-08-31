@@ -1,0 +1,16 @@
+/* 修复插画边缘悬浮闪烁：固定尺寸与平滑阴影 */
+.VPHero .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.VPHero .image-src {
+  border-radius: 20px;
+  max-height: 280px;
+  width: auto;
+  object-fit: contain;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  user-select: none;
+  -webkit-user-drag: none;
+}
