@@ -1,11 +1,12 @@
 {
   "userIgnoreFilters": [
     "^\\.github/",
+    "^\\.vitepress/",
+    "^public/",
     "^package\\.json$",
     "^package-lock\\.json$",
     "^\\.gitignore$",
-    "^README\\.md$",
-    "^docs/\\.vitepress/"
+    "^README\\.md$"
   ],
   "showUnsupportedFiles": false
 }

@@ -1,16 +1,4 @@
 import { defineConfig } from 'vitepress'
-import fs from 'fs'
-import path from 'path'
-
-function getSidebar() {
-  try {
-    const sidebarFile = path.resolve(__dirname, 'sidebar.json')
-    if (fs.existsSync(sidebarFile)) {
-      return JSON.parse(fs.readFileSync(sidebarFile, 'utf-8'))
-    }
-  } catch (e) {}
-  return { '/blog/': [] }
-}
 
 export default defineConfig({
   title: "kyon.me",
@@ -30,11 +18,20 @@ export default defineConfig({
     
     nav: [
       { text: '首页', link: '/' },
-      { text: '博客', link: '/blog/' },
+      { text: '文章', link: '/posts/' },
       { text: '关于', link: '/about' }
     ],
 
-    sidebar: getSidebar(),
+    sidebar: {
+      '/posts/': [
+        {
+          text: '专栏文章',
+          items: [
+            { text: '文章首页', link: '/posts/' }
+          ]
+        }
+      ]
+    },
 
     search: {
       provider: 'local',
