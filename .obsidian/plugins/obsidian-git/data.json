@@ -1,16 +1,16 @@
 {
   "commitMsg": "vault backup: {{date}}",
-  "autoSave": true,
+  "autoSaveInterval": 2,
+  "autoPushInterval": 2,
   "autoPullInterval": 0,
-  "autoPushInterval": 0,
+  "autoBackupAfterFileChange": true,
   "disablePush": false,
   "pullBeforePush": true,
-  "disablePopups": false,
+  "disablePopups": true,
   "listChangedFilesInStatusBar": true,
   "updateSubmodules": false,
   "gitPath": "",
   "customMessageOnAutoBackup": false,
-  "autoBackupAfterFileChange": false,
   "treeStructure": false,
   "refreshInterval": 0
 }
